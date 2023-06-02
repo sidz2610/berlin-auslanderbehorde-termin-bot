@@ -90,6 +90,7 @@ class BerlinBot:
                 By.XPATH, '//*[@id="SERVICEWAHL_DE436-0-1-1-324659"]').click()
             time.sleep(30)
 
+        # Increase sleep timer to wait for slot availablity message appear
         if driver.find_element(By.XPATH, '//*[@id="focusableElement"]').is_displayed():
             print("No slots available")
         else:
