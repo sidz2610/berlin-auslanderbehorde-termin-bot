@@ -81,6 +81,8 @@ class BerlinBot:
         driver.find_element(
             By.XPATH, '//*[@id="xi-div-30"]/div[1]/label/p').click()
         time.sleep(30)
+        
+        # Added functionality to choose purpose of permit
 
         if driver.find_element(By.XPATH, '//*[@id="inner-436-0-1"]/div/div[3]/label/p').is_displayed():
             # Economic activity - EU Blue Card
